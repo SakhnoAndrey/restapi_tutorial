@@ -10,3 +10,4 @@ class SnippetList(generics.ListAPIView):
 
 class SnippetDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Snippet.objects.all()
+    serializer_class = SnippetSerializer
