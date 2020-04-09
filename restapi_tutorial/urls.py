@@ -22,4 +22,5 @@ urlpatterns = [
     path("api/v2/snippets/", include("decorator_apiview.urls")),
     path("api/v3/snippets/", include("class_apiview.urls")),
     path("api/v4/snippets/", include("mixin_class.urls")),
+    path("api/v5/snippets/", include("generic_class.urls")),
 ]
