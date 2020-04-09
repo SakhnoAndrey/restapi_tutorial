@@ -6,3 +6,5 @@ urlpatterns = [
     path("", views.snippet_list),
     path("<int:pk>/", views.snippet_detail),
 ]
+
+urlpatterns = format_suffix_patterns(urlpatterns)

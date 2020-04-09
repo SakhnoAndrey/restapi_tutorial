@@ -1,3 +1,5 @@
+# From tutorial 2. Create Views based on decorator @api_view and create serializers based on ModelSerializer
+
 from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
