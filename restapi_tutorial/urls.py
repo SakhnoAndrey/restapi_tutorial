@@ -21,4 +21,5 @@ urlpatterns = [
     path("api/v1/snippets/", include("serialization.urls")),
     path("api/v2/snippets/", include("decorator_apiview.urls")),
     path("api/v3/snippets/", include("class_apiview.urls")),
+    path("api/v4/snippets/", include("mixin_class.urls")),
 ]
