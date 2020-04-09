@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/snippets/v1/', include('serialization.urls')),
-    path('api/snippets/v2/', include('decorator_apiview.urls')),
+    path("admin/", admin.site.urls),
+    path("api/snippets/v1/", include("serialization.urls")),
+    path("api/snippets/v2/", include("decorator_apiview.urls")),
 ]

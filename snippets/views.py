@@ -53,9 +53,9 @@ from rest_framework import mixins
 from rest_framework import generics
 
 
-class SnippetList(mixins.ListModelMixin,
-                  mixins.CreateModelMixin,
-                  generics.GenericAPIView):
+class SnippetList(
+    mixins.ListModelMixin, mixins.CreateModelMixin, generics.GenericAPIView
+):
     queryset = Snippet.objects.all()
     serializer_class = SnippetSerializer
 
@@ -66,10 +66,12 @@ class SnippetList(mixins.ListModelMixin,
         return self.create(request, *args, **kwargs)
 
 
-class SnippetDetail(mixins.RetrieveModelMixin,
-                    mixins.UpdateModelMixin,
-                    mixins.DestroyModelMixin,
-                    generics.GenericAPIView):
+class SnippetDetail(
+    mixins.RetrieveModelMixin,
+    mixins.UpdateModelMixin,
+    mixins.DestroyModelMixin,
+    generics.GenericAPIView,
+):
     queryset = Snippet.objects.all()
     serializer_class = SnippetSerializer
 
