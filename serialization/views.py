@@ -1,4 +1,4 @@
-# From tutorial 1. Using regular Django views, creating serializers based on Serializer class
+# From tutorial #1. Using regular Django views, creating serializers based on Serializer class
 
 from django.http import HttpResponse, JsonResponse
 from django.views.decorators.csrf import csrf_exempt

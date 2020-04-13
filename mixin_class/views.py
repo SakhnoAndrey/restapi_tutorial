@@ -1,3 +1,5 @@
+# From tutorial #3. Using mixins
+
 from snippets.models import Snippet
 from snippets.serializers import SnippetSerializer
 from rest_framework import mixins
