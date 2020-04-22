@@ -24,4 +24,7 @@ urlpatterns = [
     path("api/v4/snippets/", include("mixin_class.urls")),
     path("api/v5/snippets/", include("generic_class.urls")),
     path("api/v6/", include("auth_perm.urls")),
+    path("api/v7/", include("relation_linked.urls")),
 ]
+
+urlpatterns += [path("api-auth/", include("rest_framework.urls"))]
